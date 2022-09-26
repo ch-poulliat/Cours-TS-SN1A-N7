@@ -17,7 +17,7 @@ Vous trouverez ici les sujets des travaux dirigés associés au cours de traitem
 
     - <span style="color:green">***Correction :***</span> {download}`TD2 : FILTRAGE <./downloads/Correction-TD2-signal.pdf>`
     
-3. **Séance TD-3 ECHANTILLONNAGE :** 
+3. **Séance TD-3 : ECHANTILLONNAGE** 
 
     - <span style="color:red"> ***Sujet :***</span> {download}`TD3 : ECHANTILLONNAGE <./downloads/TD3-signal.pdf>`
 
