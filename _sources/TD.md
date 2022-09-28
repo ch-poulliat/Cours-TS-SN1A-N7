@@ -1,7 +1,8 @@
 # Travaux dirigés & Exercices 
 
 
-## Sujets
+**<font size=5> Sujets des différentes séances</font>**
+
 Vous trouverez ici les sujets des travaux dirigés associés au cours de traitement du signal avec les corrections.
 
 1. **Séance TD-1 : SIGNAUX ET SPECTRES** 
@@ -24,6 +25,6 @@ Vous trouverez ici les sujets des travaux dirigés associés au cours de traitem
     - <span style="color:green">***Correction :***</span> {download}`TD3 : ECHANTILLONNAGE <./downloads/Correction-TD3-signal.pdf>`
     
 
-## Exercices et problèmes résolus supplémentaires
+**<font size=5>  Exercices et problèmes résolus supplémentaires</font>**
 
 Un polycopié d'exercices commun aux deux parties du cours est disponible ici {download}`Polycopié 1SN Traitement du Signal - Exercices et problèmes résolus <./downloads/PolyTS-exercice-2022.pdf>`
