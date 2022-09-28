@@ -36,4 +36,4 @@ Vous trouverez ici les documents associés au projet.
 - **Trame de rapport LaTeX :** 
 
 
-    - <span style="color:red"> ***Archive :***</span> {download}`Norme V21 <./downloads/EXEMPLE RAPPORT LaTeX.zip>`
+    - <span style="color:red"> ***Archive :***</span> {download}`Trame Rapport LaTeX<./downloads/EXEMPLE RAPPORT LaTeX.zip>`
