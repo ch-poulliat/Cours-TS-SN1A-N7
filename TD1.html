@@ -472,6 +472,103 @@ R_X(\tau)&amp;=E\left[X(t)X^*(t-\tau)\right]\\
 </ol>
 </section>
 </div>
+<div class="exercise dropdown admonition" id="TD1-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2 </span> (Modulation d’amplitude)</p>
+<section id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A(t)\)</span> un signal aléatoire stationnaire, réel, de fonction d’autocorrélation <span class="math notranslate nohighlight">\(R_A(\tau)\)</span> et de densité spectrale de puissance <span class="math notranslate nohighlight">\(S_A(f)\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S_A(f)=\left\{
+              \begin{array}{ll}
+              \alpha, &amp; \hbox{si $\; |f|\leq F$} \\
+                0, &amp; \hbox{sinon.}
+              \end{array}
+            \right.
+\end{split}\]</div>
+<p>On considère le signal <span class="math notranslate nohighlight">\(X(t)=A(t) \cos\left(2 \pi f_0 t + \theta \right)\)</span>, avec <span class="math notranslate nohighlight">\(F\ll f_0\)</span> et <span class="math notranslate nohighlight">\(\theta \)</span> une variable aléatoire uniformément répartie sur l’intervalle <span class="math notranslate nohighlight">\(\left[ 0,2\pi \right[\)</span> indépendante de <span class="math notranslate nohighlight">\(A(t)\)</span>.</p>
+<ol>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(X(t)\)</span> est un signal aléatoire stationnaire. Déterminer et représenter graphiquement sa densité spectrale de puissance.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">Le signal est aléatoire. Pour montrer qu’il est stationnaire il faut montrer que <span class="math notranslate nohighlight">\(m_X\)</span> et <span class="math notranslate nohighlight">\(R_X\)</span> sont indépendantes du temps.</p></li>
+<li><p class="sd-card-text">Sa moyenne est donnée par :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[m_X=E\left[X(t)\right]=E\left[A(t) \cos\left(2 \pi f_0 t+\theta\right)\right]=E\left[A(t)\right] E\left[\cos\left(2 \pi f_0 t+\theta\right)\right]\]</div>
+<p class="sd-card-text">car <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(\theta\)</span> sont indépendantes. D’où <span class="math notranslate nohighlight">\(m_X=0\)</span>.</p>
+<ul class="simple">
+<li><p class="sd-card-text">Sa fonction d’autocorrélation est donnée par :</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R_X(\tau)&amp;=E\left[X(t)X^*(t-\tau)\right]\\
+&amp;=E\left[A(t) \cos\left(2 \pi f_0 t+\theta\right) A^*(t-\tau) \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+&amp;=E\left[A(t)A^*(t-\tau)\right] E\left[\cos\left(2 \pi f_0 t+\theta\right)  \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+&amp;=R_A(\tau) \times \frac{1}{2} \cos\left(2 \pi f_0 \tau\right)
+\end{align*}\]</div>
+<ul class="simple">
+<li><p class="sd-card-text">Le signal est bien stationnaire (au second ordre) car sa moyenne et sa fonction d’autocorrélation sont indépendantes du temps.</p></li>
+<li><p class="sd-card-text">Sa DSP est donnée par</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+S_X(f)&amp;=TF\left[R_X(\tau)\right]\\
+&amp;=S_A(f) \ast \frac{1}{4} \left\{\delta\left(f- f_0\right)+\delta\left(f+f_0\right)\right\}\\
+&amp;=\frac{1}{4} \left\{S_A\left(f- f_0\right)+S_A\left(f+f_0\right)\right\}
+\end{align*}\]</div>
+</div>
+</details></li>
+<li><p>Afin de retrouver le signal <span class="math notranslate nohighlight">\(A(t)\)</span> à partir de <span class="math notranslate nohighlight">\(X(t)\)</span>, on construit le signal</p>
+<div class="math notranslate nohighlight">
+\[Y(t)=X(t) \cos\left(2 \pi f_0 t + \theta \right).\]</div>
+<p>a. Déterminer et tracer la densité spectrale de puissance de <span class="math notranslate nohighlight">\(Y(t)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ R_Y(\tau)&amp;=E\left[Y(t)Y^*(t-\tau)\right]\\
+          &amp;=E\left[X(t) \cos\left(2 \pi f_0 t+\theta\right) X^*(t-\tau) \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]
+ \end{align*}\]</div>
+<p class="sd-card-text">Attention ici <span class="math notranslate nohighlight">\(X(t)\)</span> et le cosinus ne sont pas indépendants, tous deux dépendent de <span class="math notranslate nohighlight">\(\theta\)</span>. D’où</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+        R_Y(\tau)&amp;=E\left[A(t) \cos^2\left(2 \pi f_0 t+\theta\right) A^*(t-\tau) \cos^2\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+        &amp;=R_A(\tau) \times E\left[\frac{1+\cos\left(4 \pi f_0 t+2\theta\right)}{2} \frac{1+\cos\left(4 \pi f_0 (t-\tau)+2\theta\right) }{2} \right]\\
+        &amp;=\frac{1}{4}R_A(\tau)E\left[1+\cos\left(2\theta+...\right)+\cos\left(2\theta+...\right)+\frac{1}{2}\left\{\cos\left(4 \pi f_0 \tau \right)+\cos\left(4 \theta + ...\right)\right\}\right]\\
+        &amp;=\frac{1}{4}R_A(\tau)\left\{1+\frac{1}{2}\cos\left(4 \pi f_0 \tau\right)\right\}
+ \end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+        S_Y(f)&amp;=TF\left[R_Y(\tau)\right]=\frac{1}{4} S_A(f) \ast \left\{ \delta(f) + \frac{1}{4} \left\{\delta\left(f- 2f_0\right)+\delta\left(f+2f_0\right)\right\}\right\}\\
+        &amp;=\frac{1}{4} S_A(f) + \frac{1}{16} \left\{S_A\left(f- 2f_0\right)+S_A\left(f+2f_0\right)\right\}
+ \end{align*}\]</div>
+</div>
+</details><p>b. Quel traitement doit-on utiliser pour retrouver <span class="math notranslate nohighlight">\(A(t)\)</span> à partir de <span class="math notranslate nohighlight">\(Y(t)\)</span> ?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+Solution<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Il faudra utiliser un filtre passe-bas pour conserver uniquement la partie <span class="math notranslate nohighlight">\(\frac{1}{4} S_A(f)\)</span> et couper la partie qui se trouve autour de <span class="math notranslate nohighlight">\(2f_0\)</span>.</p>
+</div>
+</details></li>
+</ol>
+</section>
+</div>
 </section>
 
     <script type="text/x-thebe-config">

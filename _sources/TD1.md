@@ -133,3 +133,94 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
     ```
 
 ````
+
+````{exercise} Modulation d'amplitude
+:class: dropdown
+
+Soit $A(t)$ un signal aléatoire stationnaire, réel, de fonction d'autocorrélation $R_A(\tau)$ et de densité spectrale de puissance $S_A(f)$ définie par :
+
+$$
+S_A(f)=\left\{
+              \begin{array}{ll}
+              \alpha, & \hbox{si $\; |f|\leq F$} \\
+                0, & \hbox{sinon.}
+              \end{array}
+            \right.
+$$
+
+On considère le signal $X(t)=A(t) \cos\left(2 \pi f_0 t + \theta \right)$, avec $F\ll f_0$ et $\theta $ une variable aléatoire uniformément répartie sur l'intervalle $\left[ 0,2\pi \right[$ indépendante de $A(t)$.
+
+1. Montrer que $X(t)$ est un signal aléatoire stationnaire. Déterminer et représenter graphiquement sa densité spectrale de puissance.
+
+    ```{dropdown} Solution
+    :animate: fade-in-slide-down
+
+    - Le signal est aléatoire. Pour montrer qu'il est stationnaire il faut montrer que $m_X$ et $R_X$ sont indépendantes du temps.
+
+    - Sa moyenne est donnée par : 
+    
+    $$m_X=E\left[X(t)\right]=E\left[A(t) \cos\left(2 \pi f_0 t+\theta\right)\right]=E\left[A(t)\right] E\left[\cos\left(2 \pi f_0 t+\theta\right)\right]$$
+
+    car $A$ et $\theta$ sont indépendantes. D'où $m_X=0$.
+
+    - Sa fonction d'autocorrélation est donnée par :
+    
+    \begin{align*}
+    R_X(\tau)&=E\left[X(t)X^*(t-\tau)\right]\\
+    &=E\left[A(t) \cos\left(2 \pi f_0 t+\theta\right) A^*(t-\tau) \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+    &=E\left[A(t)A^*(t-\tau)\right] E\left[\cos\left(2 \pi f_0 t+\theta\right)  \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+    &=R_A(\tau) \times \frac{1}{2} \cos\left(2 \pi f_0 \tau\right)
+    \end{align*}
+
+
+    - Le signal est bien stationnaire (au second ordre) car sa moyenne et sa fonction d'autocorrélation sont indépendantes du temps.
+
+    - Sa DSP est donnée par 
+    \begin{align*}
+    S_X(f)&=TF\left[R_X(\tau)\right]\\
+    &=S_A(f) \ast \frac{1}{4} \left\{\delta\left(f- f_0\right)+\delta\left(f+f_0\right)\right\}\\
+    &=\frac{1}{4} \left\{S_A\left(f- f_0\right)+S_A\left(f+f_0\right)\right\}
+    \end{align*}
+    ```
+    
+2. Afin de retrouver le signal $A(t)$ à partir de $X(t)$, on construit le signal 
+
+
+    $$Y(t)=X(t) \cos\left(2 \pi f_0 t + \theta \right).$$
+    
+    a. Déterminer et tracer la densité spectrale de puissance de $Y(t)$.
+            
+            
+    ```{dropdown} Solution
+     :animate: fade-in-slide-down
+        
+     \begin{align*}
+     R_Y(\tau)&=E\left[Y(t)Y^*(t-\tau)\right]\\
+              &=E\left[X(t) \cos\left(2 \pi f_0 t+\theta\right) X^*(t-\tau) \cos\left(2 \pi f_0 (t-\tau)+\theta\right)\right]
+     \end{align*}
+        
+     Attention ici $X(t)$ et le cosinus ne sont pas indépendants, tous deux dépendent de $\theta$. D'où 
+        
+     \begin{align*}
+            R_Y(\tau)&=E\left[A(t) \cos^2\left(2 \pi f_0 t+\theta\right) A^*(t-\tau) \cos^2\left(2 \pi f_0 (t-\tau)+\theta\right)\right]\\
+            &=R_A(\tau) \times E\left[\frac{1+\cos\left(4 \pi f_0 t+2\theta\right)}{2} \frac{1+\cos\left(4 \pi f_0 (t-\tau)+2\theta\right) }{2} \right]\\
+            &=\frac{1}{4}R_A(\tau)E\left[1+\cos\left(2\theta+...\right)+\cos\left(2\theta+...\right)+\frac{1}{2}\left\{\cos\left(4 \pi f_0 \tau \right)+\cos\left(4 \theta + ...\right)\right\}\right]\\
+            &=\frac{1}{4}R_A(\tau)\left\{1+\frac{1}{2}\cos\left(4 \pi f_0 \tau\right)\right\}
+     \end{align*}
+        
+     \begin{align*}
+            S_Y(f)&=TF\left[R_Y(\tau)\right]=\frac{1}{4} S_A(f) \ast \left\{ \delta(f) + \frac{1}{4} \left\{\delta\left(f- 2f_0\right)+\delta\left(f+2f_0\right)\right\}\right\}\\
+            &=\frac{1}{4} S_A(f) + \frac{1}{16} \left\{S_A\left(f- 2f_0\right)+S_A\left(f+2f_0\right)\right\}
+     \end{align*}
+    ```
+    
+
+    b. Quel traitement doit-on utiliser pour retrouver $A(t)$ à partir de $Y(t)$ ?
+       
+    ```{dropdown} Solution
+    :animate: fade-in-slide-down
+        
+    Il faudra utiliser un filtre passe-bas pour conserver uniquement la partie $\frac{1}{4} S_A(f)$ et couper la partie qui se trouve autour de $2f_0$.
+        
+    ```
+ ````
