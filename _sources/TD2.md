@@ -252,7 +252,7 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
     `````
 ``````
 
-### Exercice 3
+### Exercice 3 :
 
 ````{margin}
 
