@@ -301,7 +301,7 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
 
     
     \begin{align*}
-    Var_Y1=E\left[\left(Y(t)-m_Y\right)^2\right]\\
+    Var_Y1&=E\left[\left(Y(t)-m_Y\right)^2\right]\\
     &=E\left[Y^2(t)\right]- m_Y^2\\ 
     &=E\left[e^{2X(t)}\right]-e^{\sigma^2}\\
     &=e^{2\sigma^2}-e^{\sigma^2}
@@ -323,6 +323,7 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
     $$X_1(t)=X(t), \; Y_1(t)=e^{X(t)}=Y(t)$$ 
 
     et 
+    
     $$X_2(t)=X(t-\tau), \; Y_2(t)=e^{X(t-\tau)}=Y(t-\tau)$$
 
     Cela donne :
