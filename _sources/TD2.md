@@ -60,7 +60,7 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
     
     \begin{align*}
     y(t)&=\frac{1}{T} \int_{t-T}^{t} x(u) du\\
-    &=\frac{1}{T} int_{\mathbb{R}} x(u) \Pi_T \left( u- \left( t-\frac{T}{2}\right) \right) du\\
+    &=\frac{1}{T} \int_{\mathbb{R}} x(u) \Pi_T \left( u- \left( t-\frac{T}{2}\right) \right) du\\
     &=\frac{1}{T}\int_{\mathbb{R}} x(u) \Pi_T \left(\left(t-\frac{T}{2}\right)-u\right) du\\
     &=x(t) \ast h(t)  
     \end{align*}
@@ -204,9 +204,8 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
     &=\int_{\mathbb{R}} S_{s}(f) \left|H(f)\right|^2 df\\
     &=\int_{\mathbb{R}} \frac{A^2}{4}\left\{\delta(f-f_0)+\delta(f+f_0)\right\} \frac{1}{\theta^2+4 \pi^2 f^2} df\\
     &=\frac{A^2}{4} \frac{1}{\theta^2+4 \pi^2 f_0^2} \times 2
-    \end{align*}
-    
-    \begin{align*}
+    & \\
+    &\\
     P_{Y_B}&=\int_{\mathbb{R}} S_{Y_{B}}(f) df\\
     &=\int_{\mathbb{R}} S_{B}(f) \left|H(f)\right|^2 df\\
     &=\int_{\mathbb{R}} \frac{N_0}{2} \frac{1}{\theta^2+4 \pi^2 f^2} df\\

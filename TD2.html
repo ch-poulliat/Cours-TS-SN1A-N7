@@ -57,7 +57,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Travaux Pratiques &amp; Projet" href="TP.html" />
+    <link rel="next" title="Séance TD-3 : Echantilonnage" href="TD3.html" />
     <link rel="prev" title="Séance TD-1 : Signaux &amp; Spectres" href="TD1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -142,6 +142,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Séance TD-2 : Filtrage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="TD3.html">
+     Séance TD-3 : Echantilonnage
     </a>
    </li>
   </ul>
@@ -412,8 +417,8 @@ Solution<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Il existe plusieurs manières de répondre à cette question :</strong></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="ff89e777-eff1-4b6a-b572-829257af4cd8" name="c4955fe2-0a34-43a9-9e5e-c8270292f7ee" type="radio">
-</input><label class="sd-tab-label" for="ff89e777-eff1-4b6a-b572-829257af4cd8">
+<input checked="checked" id="aa3d7ad6-cf32-434c-8986-37ddabf071e3" name="f7f7bc18-dff2-4b96-9896-d1b39fd87468" type="radio">
+</input><label class="sd-tab-label" for="aa3d7ad6-cf32-434c-8986-37ddabf071e3">
 Sol. 1</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Placer <span class="math notranslate nohighlight">\(x(t)=e^{j 2 \pi f t}\)</span> à l’entrée du filtre et montrer que la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> s’écrit alors <span class="math notranslate nohighlight">\(y(t)=H(f)e^{j 2 \pi f t}\)</span>.</p>
 <p class="sd-card-text">Ici :</p>
@@ -434,15 +439,15 @@ y(t)&amp;=\frac{1}{T}\int_{t-T}^{t} e^{j 2 \pi f u} du\\
 \[h(t)=\frac{1}{T} \Pi_T \left(t-\frac{T}{2}\right)\]</div>
 <p class="sd-card-text">si <span class="math notranslate nohighlight">\(\Pi_T \left(t\right)\)</span> représente une fonction porte de largeur <span class="math notranslate nohighlight">\(T\)</span>, de hauteur <span class="math notranslate nohighlight">\(1\)</span> et centrée en <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
 </div>
-<input id="096ba515-188c-4380-8453-73074fbc14a4" name="c4955fe2-0a34-43a9-9e5e-c8270292f7ee" type="radio">
-</input><label class="sd-tab-label" for="096ba515-188c-4380-8453-73074fbc14a4">
+<input id="943a6b4f-c381-4ee3-a79f-b8661cab59b7" name="f7f7bc18-dff2-4b96-9896-d1b39fd87468" type="radio">
+</input><label class="sd-tab-label" for="943a6b4f-c381-4ee3-a79f-b8661cab59b7">
 Sol. 2</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Montrer que, pour toute entrée <span class="math notranslate nohighlight">\(x(t)\)</span>, la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> s’écrit <span class="math notranslate nohighlight">\(y(t)=x(t) \ast h(t)\)</span>, où <span class="math notranslate nohighlight">\(h(t)\)</span> représente la réponse impulsionnelle du filtre et le définit.</p>
 <p class="sd-card-text">Ici :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 y(t)&amp;=\frac{1}{T} \int_{t-T}^{t} x(u) du\\
-&amp;=\frac{1}{T} int_{\mathbb{R}} x(u) \Pi_T \left( u- \left( t-\frac{T}{2}\right) \right) du\\
+&amp;=\frac{1}{T} \int_{\mathbb{R}} x(u) \Pi_T \left( u- \left( t-\frac{T}{2}\right) \right) du\\
 &amp;=\frac{1}{T}\int_{\mathbb{R}} x(u) \Pi_T \left(\left(t-\frac{T}{2}\right)-u\right) du\\
 &amp;=x(t) \ast h(t)  
 \end{align*}\]</div>
@@ -451,8 +456,8 @@ y(t)&amp;=\frac{1}{T} \int_{t-T}^{t} x(u) du\\
 \[h(t)=\frac{1}{T}\Pi_T \left(t-\frac{T}{2}\right).\]</div>
 <p class="sd-card-text">On a donc bien un filtre linéaire, de réponse impulsionnelle <span class="math notranslate nohighlight">\(h(t)=\frac{1}{T}\Pi_T \left(t-\frac{T}{2}\right)\)</span>.</p>
 </div>
-<input id="eddee67c-4099-445d-bd86-69986eec6be4" name="c4955fe2-0a34-43a9-9e5e-c8270292f7ee" type="radio">
-</input><label class="sd-tab-label" for="eddee67c-4099-445d-bd86-69986eec6be4">
+<input id="5aa03085-6972-400d-a1c7-2f2849b5c2e4" name="f7f7bc18-dff2-4b96-9896-d1b39fd87468" type="radio">
+</input><label class="sd-tab-label" for="5aa03085-6972-400d-a1c7-2f2849b5c2e4">
 Sol. 3</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Placer un dirac en entrée, déterminer la sortie, <span class="math notranslate nohighlight">\(h(n)\)</span>, correspondante et montrer ensuite que, pour toute entrée <span class="math notranslate nohighlight">\(x(t)\)</span>, la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> peut s’écrire comme <span class="math notranslate nohighlight">\(y(t)=x(t) \ast h(t)\)</span>.</p>
 <p class="sd-card-text">Ici si <span class="math notranslate nohighlight">\(x(t)=\delta(t)\)</span> alors</p>
@@ -476,8 +481,8 @@ y(t) = \frac{1}{T} \int_{t-T}^{t} \delta(u) du =\left\{
 \end{align*}\]</div>
 <p class="sd-card-text">Nous avons bien affaire à un filtre linéaire.</p>
 </div>
-<input id="b5603665-ed01-4682-9cf8-4325673f8006" name="c4955fe2-0a34-43a9-9e5e-c8270292f7ee" type="radio">
-</input><label class="sd-tab-label" for="b5603665-ed01-4682-9cf8-4325673f8006">
+<input id="210ee6cf-fdcb-4860-b6a9-fcb030140f86" name="f7f7bc18-dff2-4b96-9896-d1b39fd87468" type="radio">
+</input><label class="sd-tab-label" for="210ee6cf-fdcb-4860-b6a9-fcb030140f86">
 Sol. 4</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">on peut également dériver :</p>
 <div class="math notranslate nohighlight">
@@ -561,8 +566,8 @@ Solution<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Il existe plusieurs manières de répondre à cette question :</strong></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="6e2dbced-78a3-4b98-b9d2-b2f0a1897dae" name="0f265cca-a468-4570-8a38-1daff6939f12" type="radio">
-</input><label class="sd-tab-label" for="6e2dbced-78a3-4b98-b9d2-b2f0a1897dae">
+<input checked="checked" id="032c73c1-e6d7-42ff-bb14-b443f3c0870a" name="1bd2c7fc-d87a-4bb5-b661-97f26601be0b" type="radio">
+</input><label class="sd-tab-label" for="032c73c1-e6d7-42ff-bb14-b443f3c0870a">
 Sol. 1</label><div class="sd-tab-content docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -570,9 +575,8 @@ P_{Y_s}&amp;=\int_{\mathbb{R}} S_{Y_{s}}(f) df\\
 &amp;=\int_{\mathbb{R}} S_{s}(f) \left|H(f)\right|^2 df\\
 &amp;=\int_{\mathbb{R}} \frac{A^2}{4}\left\{\delta(f-f_0)+\delta(f+f_0)\right\} \frac{1}{\theta^2+4 \pi^2 f^2} df\\
 &amp;=\frac{A^2}{4} \frac{1}{\theta^2+4 \pi^2 f_0^2} \times 2
-\end{align*}\]</div>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
+&amp; \\
+&amp;\\
 P_{Y_B}&amp;=\int_{\mathbb{R}} S_{Y_{B}}(f) df\\
 &amp;=\int_{\mathbb{R}} S_{B}(f) \left|H(f)\right|^2 df\\
 &amp;=\int_{\mathbb{R}} \frac{N_0}{2} \frac{1}{\theta^2+4 \pi^2 f^2} df\\
@@ -581,8 +585,8 @@ P_{Y_B}&amp;=\int_{\mathbb{R}} S_{Y_{B}}(f) df\\
 &amp;=\frac{N_0}{4 \theta}.
 \end{align*}\]</div>
 </div>
-<input id="3efa8a66-e608-4d1c-8af9-03e22927ed7e" name="0f265cca-a468-4570-8a38-1daff6939f12" type="radio">
-</input><label class="sd-tab-label" for="3efa8a66-e608-4d1c-8af9-03e22927ed7e">
+<input id="09db071e-1442-4cea-b349-e7c77442e24f" name="1bd2c7fc-d87a-4bb5-b661-97f26601be0b" type="radio">
+</input><label class="sd-tab-label" for="09db071e-1442-4cea-b349-e7c77442e24f">
 Sol. 2</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Autre solution en utilisant les tables de Transformées de Fourier :</p>
 <div class="amsmath math notranslate nohighlight">
@@ -756,10 +760,10 @@ Solution<div class="sd-summary-down docutils">
             <p class="prev-next-title">Séance TD-1 : Signaux &amp; Spectres</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="TP.html" title="next page">
+    <a class='right-next' id="next-link" href="TD3.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Travaux Pratiques &amp; Projet</p>
+        <p class="prev-next-title">Séance TD-3 : Echantilonnage</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
