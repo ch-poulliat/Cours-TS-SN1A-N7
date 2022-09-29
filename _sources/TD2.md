@@ -336,9 +336,13 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
 
     Soit 
     
-    $$\ln R_Y(\tau)=R_X(\tau)+K \text{ (K constante) donnant } R_Y(\tau)=e^{K+R_X(\tau)}$$
+    $$\ln R_Y(\tau)=R_X(\tau)+K \text{ (K constante)}.$$ 
+    
+    Ce qui nous donne 
+    
+    $$R_Y(\tau)=e^{K+R_X(\tau)}.$$
 
-    **Calcul de K :**
+    ***Calcul de K :***
 
     $$R_Y(0)=e^{K+\sigma^2}=E\left[Y^2(t)\right]=E\left[e^{2 X(t)}\right]=e^{2 \sigma^2}$$
     
