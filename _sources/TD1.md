@@ -3,7 +3,9 @@
 
 
 ````{exercise} Etude du secteur
+:nonumber:
 :class: dropdown
+
 
 On considère dans cet exercice différents modèles du secteur et on étudie la densité spectrale de puissance des signaux obtenus à l'aide de ces modèles.
 
@@ -135,6 +137,7 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 ````
 
 ````{exercise} Modulation d'amplitude
+:nonumber:
 :class: dropdown
 
 Soit $A(t)$ un signal aléatoire stationnaire, réel, de fonction d'autocorrélation $R_A(\tau)$ et de densité spectrale de puissance $S_A(f)$ définie par :
