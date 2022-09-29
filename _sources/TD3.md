@@ -139,7 +139,7 @@ x_{ech}(t) &=&\sum_k y\left( kT_e\right) \delta \left( t-kT_e\right)
     ```
 ````
 
-### Exercice 2 :
+### Exercice 3 :
 ````{exercise} Echantillonnage d'un signal à spectre non borné
 :nonumber:
 :class: dropdown
