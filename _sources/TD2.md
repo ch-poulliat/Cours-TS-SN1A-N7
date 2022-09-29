@@ -144,7 +144,9 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
 
 ````{margin}
 
-```{tip}
+
+```{tip} 
+:class: dropdown
 
 Le rapport Signal sur Bruit en décibels (dB) est défini par : 
 
@@ -254,7 +256,8 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
 
 ````{margin}
 
-```{tip}
+```{tip} 
+:class: dropdown
 
 Si la variable aléatoire $Z$ suit une loi normale $\mathcal{N}\left( m,\sigma ^{2}\right)$ et $u$ est une constante alors on a :
 
