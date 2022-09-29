@@ -306,12 +306,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-1">
+   Exercice 1 :
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-2">
+   Exercice 2 :
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -323,6 +352,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-1">
+   Exercice 1 :
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercice-2">
+   Exercice 2 :
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -332,6 +379,8 @@ title="Print to PDF"
                 
   <section id="seance-td-1-signaux-spectres">
 <h1>Séance TD-1 : Signaux &amp; Spectres<a class="headerlink" href="#seance-td-1-signaux-spectres" title="Permalink to this headline">#</a></h1>
+<section id="exercice-1">
+<h2>Exercice 1 :<a class="headerlink" href="#exercice-1" title="Permalink to this headline">#</a></h2>
 <div class="exercise dropdown admonition" id="TD1-exercise-0">
 
 <p class="admonition-title">Exercise (Etude du secteur)</p>
@@ -476,7 +525,10 @@ R_X(\tau)&amp;=E\left[X(t)X^*(t-\tau)\right]\\
 </details></li>
 </ol>
 </section>
-</div><div class="exercise dropdown admonition" id="TD1-exercise-1">
+</div></section>
+<section id="exercice-2">
+<h2>Exercice 2 :<a class="headerlink" href="#exercice-2" title="Permalink to this headline">#</a></h2>
+<div class="exercise dropdown admonition" id="TD1-exercise-1">
 
 <p class="admonition-title">Exercise (Modulation d’amplitude)</p>
 <section id="exercise-content">
@@ -573,6 +625,7 @@ Solution<div class="sd-summary-down docutils">
 </ol>
 </section>
 </div></section>
+</section>
 
     <script type="text/x-thebe-config">
     {

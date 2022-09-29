@@ -1,7 +1,7 @@
 ## Séance TD-1 : Signaux & Spectres
 
 
-
+### Exercice 1 :
 ````{exercise} Etude du secteur
 :nonumber:
 :class: dropdown
@@ -136,6 +136,7 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 
 ````
 
+### Exercice 2 :
 ````{exercise} Modulation d'amplitude
 :nonumber:
 :class: dropdown
