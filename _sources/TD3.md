@@ -2,6 +2,40 @@
 
 
 ### Exercice 1 :
+`````{margin}
+
+````{dropdown} Propriétés TF
+:animate: fade-in-slide-down
+
+```{image} ./img/TF-prop.png
+:align: center
+```
+
+**Formules Parseval**
+
+$$\int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast }(f)df$$
+
+$$\int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df$$ 
+
+**Série de Fourier**
+
+$$\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) $$
+
+````
+`````
+
+`````{margin}
+
+````{dropdown} Tables TF
+:animate: fade-in-slide-down
+
+```{image} ./img/TF-table.png
+:align: center
+
+```
+````
+`````
+
 `````{exercise} Effet de l'échantillonnage
 :nonumber:
 :class: dropdown

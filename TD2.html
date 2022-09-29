@@ -396,6 +396,38 @@ title="Print to PDF"
 <h1>Séance TD-2 : Filtrage<a class="headerlink" href="#seance-td-2-filtrage" title="Permalink to this headline">#</a></h1>
 <section id="exercice-1">
 <h2>Exercice 1 :<a class="headerlink" href="#exercice-1" title="Permalink to this headline">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+Propriétés TF<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="_images/TF-prop.png" class="align-center" src="_images/TF-prop.png" />
+<p class="sd-card-text"><strong>Formules Parseval</strong></p>
+<div class="math notranslate nohighlight">
+\[\int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast }(f)df\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df\]</div>
+<p class="sd-card-text"><strong>Série de Fourier</strong></p>
+<div class="math notranslate nohighlight">
+\[\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) \]</div>
+</div>
+</details></aside>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+Tables TF<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img alt="_images/TF-table.png" class="align-center" src="_images/TF-table.png" />
+</div>
+</details></aside>
 <div class="exercise dropdown admonition" id="TD2-exercise-0">
 
 <p class="admonition-title">Exercise (Filtre moyenneur à mémoire finie )</p>
@@ -417,8 +449,8 @@ Solution<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Il existe plusieurs manières de répondre à cette question :</strong></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="3ae58bea-e5f4-4f07-bede-718b6b13bbee" name="a15a05f5-c593-4bff-8d97-873b9a4f7b09" type="radio">
-</input><label class="sd-tab-label" for="3ae58bea-e5f4-4f07-bede-718b6b13bbee">
+<input checked="checked" id="782d9cf7-5fb2-4ec3-9b5c-4c838159611c" name="af722c42-2bc4-492d-8428-567448d031e9" type="radio">
+</input><label class="sd-tab-label" for="782d9cf7-5fb2-4ec3-9b5c-4c838159611c">
 Sol. 1</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Placer <span class="math notranslate nohighlight">\(x(t)=e^{j 2 \pi f t}\)</span> à l’entrée du filtre et montrer que la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> s’écrit alors <span class="math notranslate nohighlight">\(y(t)=H(f)e^{j 2 \pi f t}\)</span>.</p>
 <p class="sd-card-text">Ici :</p>
@@ -439,8 +471,8 @@ y(t)&amp;=\frac{1}{T}\int_{t-T}^{t} e^{j 2 \pi f u} du\\
 \[h(t)=\frac{1}{T} \Pi_T \left(t-\frac{T}{2}\right)\]</div>
 <p class="sd-card-text">si <span class="math notranslate nohighlight">\(\Pi_T \left(t\right)\)</span> représente une fonction porte de largeur <span class="math notranslate nohighlight">\(T\)</span>, de hauteur <span class="math notranslate nohighlight">\(1\)</span> et centrée en <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
 </div>
-<input id="d1658ab0-b442-419e-a056-bdb2a1cd9be6" name="a15a05f5-c593-4bff-8d97-873b9a4f7b09" type="radio">
-</input><label class="sd-tab-label" for="d1658ab0-b442-419e-a056-bdb2a1cd9be6">
+<input id="1ecd3df2-bdeb-4f01-9455-45afcb76560d" name="af722c42-2bc4-492d-8428-567448d031e9" type="radio">
+</input><label class="sd-tab-label" for="1ecd3df2-bdeb-4f01-9455-45afcb76560d">
 Sol. 2</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Montrer que, pour toute entrée <span class="math notranslate nohighlight">\(x(t)\)</span>, la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> s’écrit <span class="math notranslate nohighlight">\(y(t)=x(t) \ast h(t)\)</span>, où <span class="math notranslate nohighlight">\(h(t)\)</span> représente la réponse impulsionnelle du filtre et le définit.</p>
 <p class="sd-card-text">Ici :</p>
@@ -456,8 +488,8 @@ y(t)&amp;=\frac{1}{T} \int_{t-T}^{t} x(u) du\\
 \[h(t)=\frac{1}{T}\Pi_T \left(t-\frac{T}{2}\right).\]</div>
 <p class="sd-card-text">On a donc bien un filtre linéaire, de réponse impulsionnelle <span class="math notranslate nohighlight">\(h(t)=\frac{1}{T}\Pi_T \left(t-\frac{T}{2}\right)\)</span>.</p>
 </div>
-<input id="d2b302f8-5ea9-42c4-bcfc-13bfd205b218" name="a15a05f5-c593-4bff-8d97-873b9a4f7b09" type="radio">
-</input><label class="sd-tab-label" for="d2b302f8-5ea9-42c4-bcfc-13bfd205b218">
+<input id="c086f3a1-5e3f-4047-9bf5-39cdb57d19b4" name="af722c42-2bc4-492d-8428-567448d031e9" type="radio">
+</input><label class="sd-tab-label" for="c086f3a1-5e3f-4047-9bf5-39cdb57d19b4">
 Sol. 3</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Placer un dirac en entrée, déterminer la sortie, <span class="math notranslate nohighlight">\(h(n)\)</span>, correspondante et montrer ensuite que, pour toute entrée <span class="math notranslate nohighlight">\(x(t)\)</span>, la sortie <span class="math notranslate nohighlight">\(y(t)\)</span> peut s’écrire comme <span class="math notranslate nohighlight">\(y(t)=x(t) \ast h(t)\)</span>.</p>
 <p class="sd-card-text">Ici si <span class="math notranslate nohighlight">\(x(t)=\delta(t)\)</span> alors</p>
@@ -481,8 +513,8 @@ y(t) = \frac{1}{T} \int_{t-T}^{t} \delta(u) du =\left\{
 \end{align*}\]</div>
 <p class="sd-card-text">Nous avons bien affaire à un filtre linéaire.</p>
 </div>
-<input id="76ff2a88-bda7-476d-87c0-6f829cd638ef" name="a15a05f5-c593-4bff-8d97-873b9a4f7b09" type="radio">
-</input><label class="sd-tab-label" for="76ff2a88-bda7-476d-87c0-6f829cd638ef">
+<input id="ad2ff4b3-18a8-4b4d-b69b-0d13717f36a1" name="af722c42-2bc4-492d-8428-567448d031e9" type="radio">
+</input><label class="sd-tab-label" for="ad2ff4b3-18a8-4b4d-b69b-0d13717f36a1">
 Sol. 4</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">on peut également dériver :</p>
 <div class="math notranslate nohighlight">
@@ -522,8 +554,8 @@ Solution<div class="sd-summary-down docutils">
 <h2>Exercice 2 :<a class="headerlink" href="#exercice-2" title="Permalink to this headline">#</a></h2>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="dropdown admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Tip : Exercice 2</p>
 <p>Le rapport Signal sur Bruit en décibels (dB) est défini par :</p>
 <div class="math notranslate nohighlight">
 \[RSB=10\log_{10} \left( \frac{P_{Y_{s}}}{P_{YB}}\right) \text{ (dB).}\]</div>
@@ -566,8 +598,8 @@ Solution<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Il existe plusieurs manières de répondre à cette question :</strong></p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="745e62ef-4636-4a8b-b98c-7c76674c2c7e" name="c42c7660-5a86-4dfc-b625-bd446e822415" type="radio">
-</input><label class="sd-tab-label" for="745e62ef-4636-4a8b-b98c-7c76674c2c7e">
+<input checked="checked" id="c132ffc3-7daf-47ff-877f-791c0f1bab41" name="5ff20cea-0c12-46e6-a324-458cdc66c99b" type="radio">
+</input><label class="sd-tab-label" for="c132ffc3-7daf-47ff-877f-791c0f1bab41">
 Sol. 1</label><div class="sd-tab-content docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -585,8 +617,8 @@ P_{Y_B}&amp;=\int_{\mathbb{R}} S_{Y_{B}}(f) df\\
 &amp;=\frac{N_0}{4 \theta}.
 \end{align*}\]</div>
 </div>
-<input id="aa2f8c9d-18ea-4e20-a810-6f6ecfaceacf" name="c42c7660-5a86-4dfc-b625-bd446e822415" type="radio">
-</input><label class="sd-tab-label" for="aa2f8c9d-18ea-4e20-a810-6f6ecfaceacf">
+<input id="5323eb1a-58cd-458d-8ede-1912d683c142" name="5ff20cea-0c12-46e6-a324-458cdc66c99b" type="radio">
+</input><label class="sd-tab-label" for="5323eb1a-58cd-458d-8ede-1912d683c142">
 Sol. 2</label><div class="sd-tab-content docutils">
 <p class="sd-card-text">Autre solution en utilisant les tables de Transformées de Fourier :</p>
 <div class="amsmath math notranslate nohighlight">
@@ -628,8 +660,8 @@ Solution<div class="sd-summary-down docutils">
 <h2>Exercice 3 :<a class="headerlink" href="#exercice-3" title="Permalink to this headline">#</a></h2>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="dropdown admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Tip : Exercice 3</p>
 <p>Si la variable aléatoire <span class="math notranslate nohighlight">\(Z\)</span> suit une loi normale <span class="math notranslate nohighlight">\(\mathcal{N}\left( m,\sigma ^{2}\right)\)</span> et <span class="math notranslate nohighlight">\(u\)</span> est une constante alors on a :</p>
 <div class="math notranslate nohighlight">
 \[
