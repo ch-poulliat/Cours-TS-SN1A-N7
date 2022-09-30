@@ -54,10 +54,10 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
 
     **Il existe plusieurs manières de répondre à cette question :**
 
-    ````{tab-set}
-
+    ````{tab-set} 
+      
     ```{tab-item} Sol. 1
-                
+       
     Placer $x(t)=e^{j 2 \pi f t}$ à l'entrée du filtre et montrer que la sortie $y(t)$ s'écrit alors $y(t)=H(f)e^{j 2 \pi f t}$.    
 
     Ici :
