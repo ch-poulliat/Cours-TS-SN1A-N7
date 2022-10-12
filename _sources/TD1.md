@@ -7,19 +7,29 @@
 ````{dropdown} Propriétés TF
 :animate: fade-in-slide-down
 
-```{image} ./img/TF-prop.png
-:align: center
-```
+**Propriétés générales T.F.**
+
+\begin{align*} 
+\small ax(t)+by(t) & \small \rightleftharpoons  aX(f)+bY(f) \\
+\small x(t-t_{0}) & \small \rightleftharpoons X(f)e^{-i 2 \pi f t_{0}} \\
+\small x(t)e^{+i 2 \pi f_{0} t} & \small \rightleftharpoons X(f-f_{0}) \\
+\small x^{\ast }(t)& \small\rightleftharpoons  X^{\ast}(-f) \\
+\small x(t) y(t)& \small \rightleftharpoons   X(f)\ast Y(f) \\
+\small x(t)\ast y(t) & \small \rightleftharpoons  X(f) Y(f) \\
+\small x(at+b) & \small \rightleftharpoons  \frac{1}{\left|a\right|}X\left(\frac{f}{a}\right) e^{i2\pi \frac{b}{a}f} \\
+\small \frac{dx^{(n)}(t)}{dt^{n}} & \small \rightleftharpoons  \left( i2\pi f\right) ^{n}X(f)  \\
+\small \left( -i2\pi t\right)^{n}x(t) & \small \rightleftharpoons  \frac{dX^{(n)}(f)}{df^{n}}  
+\end{align*} 
 
 **Formules Parseval**
 
-$$\int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast }(f)df$$
+$$\small \int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast}(f)df$$
 
-$$\int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df$$ 
+$$\small \int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df$$ 
 
 **Série de Fourier**
 
-$$\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) $$
+$$\small \underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) $$
 
 ````
 `````
@@ -29,10 +39,27 @@ $$\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \u
 ````{dropdown} Tables TF
 :animate: fade-in-slide-down
 
-```{image} ./img/TF-table.png
-:align: center
+\begin{align*}
+\small 1 & \small \rightleftharpoons  \delta \left( f \right)\\ 
+\small \delta \left( t\right) & \small \rightleftharpoons  1 \\ 
+\small e^{+i2\pi f_{0}t}& \small \rightleftharpoons \delta \left( f-f_{0}\right)\\ 
+\small\delta \left( t-t_{0}\right) & \small \rightleftharpoons e^{-i2\pi ft_{0}} \\
+\small \amalg \hspace{-0.3cm}\amalg _{T}\left( t\right)  & \small\rightleftharpoons \frac{1}{T}\amalg \hspace{-0.3cm}\amalg _{1/T}\left(f\right) \\
+\small \cos \left( 2\pi f_{0}t\right) & \small \rightleftharpoons \frac{1}{2}\left(\delta \left( f-f_{0}\right) +\delta \left( f+f_{0}\right) \right) \\ 
+\small \sin \left( 2\pi f_{0}t\right) & \small \rightleftharpoons \frac{1}{2i}\left( \delta \left( f-f_{0}\right)-\delta \left( f+f_{0}\right) \right)\\ 
+\small e^{-a\left| t\right| } & \small \rightleftharpoons \frac{2a}{a^{2}+4\pi ^{2}f^{2}} \\ 
+\small e^{-\pi t^{2}} & \small \rightleftharpoons e^{-\pi f^{2}} \\ 
+\small \Pi _{T}\left( t\right) & \small \rightleftharpoons T \mathrm{sinc}\left( \pi Tf\right) \\ 
+\small \Lambda _{T}\left( t\right) & \small \rightleftharpoons T \mathrm{sinc}^{2}\left( \pi Tf\right) \\ 
+\small B \mathrm{ sinc}\left( \pi Bt\right) & \small \rightleftharpoons \Pi _{B}\left( f\right) \\ 
+\small B \mathrm{ sinc}^{2}\left( \pi Bt\right)  & \small \rightleftharpoons \Lambda _{B}\left( f\right) \\ 
+\end{align*}  
 
-```
+où
+
+$$\small \amalg \hspace{-0.3cm}\amalg _{T}\left( t\right) = \underset{k\in \mathbb{Z}}{\sum } \delta \left( t-kT\right)$$
+
+$$\small \mathrm{sinc}\left( \pi Tf\right)=\frac{\sin \left( \pi Tf\right) }{\pi T f}$$
 ````
 `````
 

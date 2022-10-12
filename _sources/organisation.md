@@ -15,3 +15,4 @@ Cette partie du cours est portée par N. Thomas en charge des cours magistraux.
 
 Le polycopié de cours sur cette partie est disponible ici {download}`Polycopié 1SN Traitement Numérique du Signal - Partie II <./downloads/Poly-TNS.pdf>`
 
+Les diapositives du cours sur cette partie sont disponibles ici {download}`Diapositives 1SN Traitement Numérique du Signal - Partie II <./downloads/planches_COURS_TNS.pdf>`

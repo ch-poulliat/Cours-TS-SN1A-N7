@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Séance TD-1 : Signaux &amp; Spectres &#8212; Cours Traitement du Signal N7</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -20,8 +19,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -29,32 +28,35 @@
     <link rel="stylesheet" type="text/css" href="_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystyle.css" />
+    <link rel="stylesheet" type="text/css" href="_static/.ipynb_checkpoints/mystyle-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
+    <script >let toggleHintShow = 'Click to show';</script>
+    <script >let toggleHintHide = 'Click to hide';</script>
+    <script >let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Séance TD-2 : Filtrage" href="TD2.html" />
@@ -382,11 +384,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="seance-td-1-signaux-spectres">
+  <div class="section" id="seance-td-1-signaux-spectres">
 <h1>Séance TD-1 : Signaux &amp; Spectres<a class="headerlink" href="#seance-td-1-signaux-spectres" title="Permalink to this headline">#</a></h1>
-<section id="exercice-1">
+<div class="section" id="exercice-1">
 <h2>Exercice 1 :<a class="headerlink" href="#exercice-1" title="Permalink to this headline">#</a></h2>
-<aside class="margin sidebar">
+<div class="margin sidebar">
 <p class="sidebar-title"></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
 <summary class="sd-summary-title sd-card-header">
@@ -395,18 +397,30 @@ Propriétés TF<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<img alt="_images/TF-prop.png" class="align-center" src="_images/TF-prop.png" />
+<p class="sd-card-text"><strong>Propriétés générales T.F.</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+\small ax(t)+by(t) &amp; \small \rightleftharpoons  aX(f)+bY(f) \\
+\small x(t-t_{0}) &amp; \small \rightleftharpoons X(f)e^{-i 2 \pi f t_{0}} \\
+\small x(t)e^{+i 2 \pi f_{0} t} &amp; \small \rightleftharpoons X(f-f_{0}) \\
+\small x^{\ast }(t)&amp; \small\rightleftharpoons  X^{\ast}(-f) \\
+\small x(t) y(t)&amp; \small \rightleftharpoons   X(f)\ast Y(f) \\
+\small x(t)\ast y(t) &amp; \small \rightleftharpoons  X(f) Y(f) \\
+\small x(at+b) &amp; \small \rightleftharpoons  \frac{1}{\left|a\right|}X\left(\frac{f}{a}\right) e^{i2\pi \frac{b}{a}f} \\
+\small \frac{dx^{(n)}(t)}{dt^{n}} &amp; \small \rightleftharpoons  \left( i2\pi f\right) ^{n}X(f)  \\
+\small \left( -i2\pi t\right)^{n}x(t) &amp; \small \rightleftharpoons  \frac{dX^{(n)}(f)}{df^{n}}  
+\end{align*}\]</div>
 <p class="sd-card-text"><strong>Formules Parseval</strong></p>
 <div class="math notranslate nohighlight">
-\[\int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast }(f)df\]</div>
+\[\small \int_{\mathbb{R}}x(t)y^{\ast }(t)dt=\int_{\mathbb{R}}X(f)Y^{\ast}(f)df\]</div>
 <div class="math notranslate nohighlight">
-\[\int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df\]</div>
+\[\small \int_{\mathbb{R}}\left| x(t)\right| ^{2}dt=\int_{\mathbb{R}}\left|X(f)\right| ^{2}df\]</div>
 <p class="sd-card-text"><strong>Série de Fourier</strong></p>
 <div class="math notranslate nohighlight">
-\[\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) \]</div>
+\[\small \underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpoons \underset{n\in \mathbb{Z}}{\sum }c_{n}\delta \left( f-nf_{0}\right) \]</div>
 </div>
-</details></aside>
-<aside class="margin sidebar">
+</details></div>
+<div class="margin sidebar">
 <p class="sidebar-title"></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
 <summary class="sd-summary-title sd-card-header">
@@ -415,13 +429,33 @@ Tables TF<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<img alt="_images/TF-table.png" class="align-center" src="_images/TF-table.png" />
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\small 1 &amp; \small \rightleftharpoons  \delta \left( f \right)\\ 
+\small \delta \left( t\right) &amp; \small \rightleftharpoons  1 \\ 
+\small e^{+i2\pi f_{0}t}&amp; \small \rightleftharpoons \delta \left( f-f_{0}\right)\\ 
+\small\delta \left( t-t_{0}\right) &amp; \small \rightleftharpoons e^{-i2\pi ft_{0}} \\
+\small \amalg \hspace{-0.3cm}\amalg _{T}\left( t\right)  &amp; \small\rightleftharpoons \frac{1}{T}\amalg \hspace{-0.3cm}\amalg _{1/T}\left(f\right) \\
+\small \cos \left( 2\pi f_{0}t\right) &amp; \small \rightleftharpoons \frac{1}{2}\left(\delta \left( f-f_{0}\right) +\delta \left( f+f_{0}\right) \right) \\ 
+\small \sin \left( 2\pi f_{0}t\right) &amp; \small \rightleftharpoons \frac{1}{2i}\left( \delta \left( f-f_{0}\right)-\delta \left( f+f_{0}\right) \right)\\ 
+\small e^{-a\left| t\right| } &amp; \small \rightleftharpoons \frac{2a}{a^{2}+4\pi ^{2}f^{2}} \\ 
+\small e^{-\pi t^{2}} &amp; \small \rightleftharpoons e^{-\pi f^{2}} \\ 
+\small \Pi _{T}\left( t\right) &amp; \small \rightleftharpoons T \mathrm{sinc}\left( \pi Tf\right) \\ 
+\small \Lambda _{T}\left( t\right) &amp; \small \rightleftharpoons T \mathrm{sinc}^{2}\left( \pi Tf\right) \\ 
+\small B \mathrm{ sinc}\left( \pi Bt\right) &amp; \small \rightleftharpoons \Pi _{B}\left( f\right) \\ 
+\small B \mathrm{ sinc}^{2}\left( \pi Bt\right)  &amp; \small \rightleftharpoons \Lambda _{B}\left( f\right) \\ 
+\end{align*}\]</div>
+<p class="sd-card-text">où</p>
+<div class="math notranslate nohighlight">
+\[\small \amalg \hspace{-0.3cm}\amalg _{T}\left( t\right) = \underset{k\in \mathbb{Z}}{\sum } \delta \left( t-kT\right)\]</div>
+<div class="math notranslate nohighlight">
+\[\small \mathrm{sinc}\left( \pi Tf\right)=\frac{\sin \left( \pi Tf\right) }{\pi T f}\]</div>
 </div>
-</details></aside>
+</details></div>
 <div class="exercise dropdown admonition" id="TD1-exercise-0">
 
 <p class="admonition-title">Exercise (Etude du secteur)</p>
-<section id="exercise-content">
+<div class="section" id="exercise-content">
 <p>On considère dans cet exercice différents modèles du secteur et on étudie la densité spectrale de puissance des signaux obtenus à l’aide de ces modèles.</p>
 <ol>
 <li><p>Dans une première approche, on utilise le modèle :</p>
@@ -561,14 +595,14 @@ R_X(\tau)&amp;=E\left[X(t)X^*(t-\tau)\right]\\
 </div>
 </details></li>
 </ol>
-</section>
-</div></section>
-<section id="exercice-2">
+</div>
+</div></div>
+<div class="section" id="exercice-2">
 <h2>Exercice 2 :<a class="headerlink" href="#exercice-2" title="Permalink to this headline">#</a></h2>
 <div class="exercise dropdown admonition" id="TD1-exercise-1">
 
 <p class="admonition-title">Exercise (Modulation d’amplitude)</p>
-<section id="exercise-content">
+<div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A(t)\)</span> un signal aléatoire stationnaire, réel, de fonction d’autocorrélation <span class="math notranslate nohighlight">\(R_A(\tau)\)</span> et de densité spectrale de puissance <span class="math notranslate nohighlight">\(S_A(f)\)</span> définie par :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -660,9 +694,9 @@ Solution<div class="sd-summary-down docutils">
 </div>
 </details></li>
 </ol>
-</section>
-</div></section>
-</section>
+</div>
+</div></div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -714,7 +748,7 @@ Solution<div class="sd-summary-down docutils">
   
     By J-Y. Tourneret, N. Thomas & C. Poulliat<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2021.<br/>
 </p>
         </footer>
     </div>
