@@ -14,5 +14,45 @@ Dans les rubriques suivantes, vous trouverez  l'ensemble des ressources (polycop
 
 Vous pouvez consulter les rubriques suivantes :
 
-```{tableofcontents}
+
+````{grid} 3
+```{grid-item-card} 
+:link: organisation
+:link-type: doc
+:text-align: center 
+:shadow: md 
+:class-header: bg-light center
+
+Organisation du Cours
+^^^
+
+L'organisation du cours et les ressources disponibles associées.
 ```
+```{grid-item-card} 
+:link: TD
+:link-type: doc
+:text-align: center 
+:shadow: md 
+:class-header: bg-light
+
+Travaux Dirigés & Exercices corrigés
+^^^
+
+Les sujets et corrections des TDs, ainsi que le polycopié d'exercices résolus.
+
+```
+
+```{grid-item-card} 
+:link: TP
+:link-type: doc
+:text-align: center 
+:shadow: md 
+:class-header: bg-light
+
+Travaux pratiques & Projet
+^^^
+
+Les ressources disponibles associées aux TPs et projet.
+
+```
+````
