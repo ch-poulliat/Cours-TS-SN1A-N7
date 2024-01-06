@@ -1,63 +1,6 @@
 p {
     text-align: justify;
 }
-iframe {
-  border: 1px solid black;
-  width: 100%; /* takes precedence over the width set with the HTML width attribute */
-}
 
 
-/*My exercicse class
-div.exercise.admonition-icon > .admonition-title:after {
-  content: "\01F589"; /* the fa-scale icon */
-}
-/*div.solution.admonition-icon > .admonition-title:after {
-  content: url('solution-icon.svg'); /* the fa-scale icon */
-}*/
-
-/*********************************************
-* Variables *
-*********************************************/
-:root {
-  --note-title-color: rgba(68,138,255,.1);
-  --note-border-color: #007bff;
-  --grey-border-color: #ccc;
-}
-
-/*********************************************
-* Exercise *
-*********************************************/
-div.exercise {
-  border-color: var(--note-border-color);
-  background-color: var(--note-title-color);
-}
-
-div.exercise .admonition-title {
-  background-color: var(--note-title-color);
-}
-
-/* Remove content box */
-div.exercise .admonition-title:after {
-  content: "\f303";
-}
-
-/*********************************************
-* Solution *
-*********************************************/
-div.solution {
-  border-color: var(--grey-border-color);
-  background-color: none;
-}
-
-div.solution .admonition-title {
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* Remove content box */
-div.solution .admonition-title:after {
-  color: var(--grey-border-color);
-  content: "\f044";
-  /*content: src('./_static/icons/hand.png');*/
-}
 
