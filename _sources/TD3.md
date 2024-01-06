@@ -1,11 +1,12 @@
-## Séance TD-3 : Echantilonnage
+## {icon}`fa-solid fa-chalkboard-user` Séance TD-3 : Echantilonnage
 
 
-### Exercice 1 :
+### {icon}`fa-solid fa-folder` Exercice 1 :
 
 ````{margin}
 ```{dropdown} Propriétés TF
 :animate: fade-in-slide-down
+:icon: bell
 
 **Propriétés générales T.F.**
 
@@ -36,6 +37,7 @@ $$\small\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpo
 ````{margin}
 ```{dropdown} Tables TF
 :animate: fade-in-slide-down
+:icon: bell
 
 \begin{align*}
 \small 1 & \small \rightleftharpoons  \delta \left( f \right)\\ 
@@ -62,17 +64,15 @@ $$\small \mathrm{sinc}\left( \pi Tf\right)=\frac{\sin \left( \pi Tf\right) }{\pi
 ````
 
 
-`````{exercise} Effet de l'échantillonnage
-:nonumber:
-:class: dropdown,full-width
-
+`````{admonition} Effet de l'échantillonnage
+:class: exercise, dropdown
 
 Soit le signal suivant : $x(t)=\cos(2 \pi f_0 t),  \; f_0=10$ kHz.
 
 1. Tracer la transformée de Fourier de $x(t)$: $X(f)$.
 
-    ````{dropdown} Solution
-    :animate: fade-in-slide-down
+    ````{admonition} Solution
+    :class: solution, dropdown
   
     La transformée de Fourier de $x(t)$, $X(f)$, est tracée sur la figure suivante.
 
@@ -84,8 +84,8 @@ Soit le signal suivant : $x(t)=\cos(2 \pi f_0 t),  \; f_0=10$ kHz.
 
 2. Est-il possible d'échantillonner $x(t)$ sans perte d'information ? Si oui à quelle condition ?
 
-    ````{dropdown} Solution
-    :animate: fade-in-slide-down
+    ````{admonition} Solution
+    :class: solution, dropdown
     
     Il est possible d'échantillonner $x(t)$ sans perte d'information en utilisant une fréquence d'échantillonnage 
     
@@ -98,8 +98,8 @@ Soit le signal suivant : $x(t)=\cos(2 \pi f_0 t),  \; f_0=10$ kHz.
 
     b. $F_e=8$ kHz.
     
-    ````{dropdown} Solution
-    :animate: fade-in-slide-down
+    ````{admonition} Solution
+    :class: solution, dropdown
 
     La transformée de Fourier de $x(t)$, échantillonné à $T_e=1/F_e$, est tracée entre $0$ et $F_e$ sur les figures suivantes quand $F_e=30$ kHz et quand $F_e=8$ kHz.
 
@@ -114,8 +114,8 @@ Soit le signal suivant : $x(t)=\cos(2 \pi f_0 t),  \; f_0=10$ kHz.
     ````
 4. A partir des échantillons nous souhaitons reconstruire $x(t)$ par filtrage passe-bas à $F_e/2$. Quels seront les signaux obtenus pour chaque fréquence d'échantillonnage précédente ?
 
-    ````{dropdown} Solution
-    :animate: fade-in-slide-down
+    ````{admonition} Solution
+    :class: solution, dropdown
     
     Par filtrage passe-bas à $F_e/2$, nous obtenons 
     
@@ -125,10 +125,9 @@ Soit le signal suivant : $x(t)=\cos(2 \pi f_0 t),  \; f_0=10$ kHz.
     ````
 `````
 
-### Exercice 2 :
-````{exercise} Echantillonneur moyenneur
-:nonumber:
-:class: dropdown
+### {icon}`fa-solid fa-folder` Exercice 2 :
+````{admonition} Echantillonneur moyenneur
+:class: exercise, dropdown
 
 L'échantillonneur moyenneur est une méthode pratique d'échantillonnage qui consiste à calculer, toutes les $T_e$ secondes (période d'échantillonnage), la valeur moyenne du signal pendant un intervalle de temps $\theta $ ($\theta <<T_e$) et à affecter cette valeur moyenne à l'échantillon discrétisé :
 
@@ -146,8 +145,8 @@ x_{ech}(t) &=&\sum_k y\left( kT_e\right) \delta \left( t-kT_e\right)
 
     où $\Pi _{\theta }\left( t\right) $ et $\amalg \hspace{-0.3cm}\amalg_{T_e}\left( t\right) $ représentent respectivement la fenêtre rectangulaire de largeur $\theta$ et le peigne de Dirac de période $T_e$.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
 
     $$x_{ech}(t)=\sum_k y\left( kT_e\right) \delta \left( t-kT_e\right)= y(t) \sum_k \delta \left( t-kT_e\right)=y(t) .\amalg \hspace{-0.3cm}\amalg_{T_e}\left( t\right)$$
 
@@ -167,8 +166,8 @@ x_{ech}(t) &=&\sum_k y\left( kT_e\right) \delta \left( t-kT_e\right)
     
 2. En déduire la transformée de Fourier correspondante $X_{ech}\left( f\right) $.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
      
      \begin{align*}
          X_{ech}(f)&= Y(f) \ast \frac{1}{T_e} \amalg \hspace{-0.3cm}\amalg_{1/T_e}\left( f\right)\\
@@ -184,25 +183,24 @@ x_{ech}(t) &=&\sum_k y\left( kT_e\right) \delta \left( t-kT_e\right)
 
     a. quelle(s) condition(s) doit vérifier $\theta $ pour que le signal $x(t)$ puisse être restitué par filtrage de $x_{ech}(t)$ ?
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     Il faut que $\Delta f \leq \frac{1}{3\theta} \Leftrightarrow \theta \leq \frac{1}{3\Delta f}$
     ```
     
     b. Dans ces conditions peut-on échantillonner à la fréquence de Shannon ?
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     Après filtrage antialiasing on pourra prendre $F_e$ tel que $\Delta f < \frac{F_e}{2}=\frac{1}{2T_e} \Leftrightarrow T_e< \frac{1}{2\Delta f}$
     ```
 ````
 
-### Exercice 3 :
-````{exercise} Echantillonnage d'un signal à spectre non borné
-:nonumber:
-:class: dropdown
+### {icon}`fa-solid fa-folder` Exercice 3 :
+````{admonition} Echantillonnage d'un signal à spectre non borné
+:class: exercise, dropdown
 
 Soit le signal $x(t)$ défini par :
 
@@ -216,8 +214,8 @@ $$
 
 1. Déterminer la transformée de Fourier $X(f)$ du signal $x(t)$. Tracer $\left|X(f)\right|$.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
      
     $$X(f)=\int_{0}^{+\infty} e^{-(a+j 2 \pi f)t} dt=\frac{1}{a+j 2 \pi f}$$
     
@@ -226,16 +224,16 @@ $$
 
 2. Le signal $x(t)$ est-il échantillonnable sans perte d'information ? Expliquez votre réponse.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     Non car le spectre n'est pas borné. Il n'est donc pas possible d'appliquer la condition de Shannon.
     ```
     
 3. En considérant la transformée de Fourier comme négligeable pour une atténuation minimale de $40$ dB par rapport à sa valeur maximum, dimensionner la fréquence d'échantillonnage, $F_e$, à utiliser.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     On a le maximum du spectre pour $f=0$. On souhaite donc trouver $F_{max}$ telle que :
     
@@ -257,8 +255,8 @@ $$
     
 4. Une fois $F_e$ déterminée, quel traitement doit-on appliquer au signal avant de l'échantillonner ?
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     Un filtre anti repliement afin de tronquer le spectre du signal à $F_{max}$.
     ```

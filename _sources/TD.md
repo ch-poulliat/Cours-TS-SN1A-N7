@@ -1,4 +1,4 @@
-# Travaux dirigés & Exercices 
+# {icon}`fa-solid fa-file-pen` Travaux dirigés & Exercices
 
 
 **<font size=5> Sujets des différentes séances</font>**
@@ -13,7 +13,7 @@ Vous trouverez ici les sujets des travaux dirigés associés au cours de traitem
 :class-body: sd-text-center
 :class-footer: sd-text-center
 
-**Séance TD-1 : SIGNAUX ET SPECTRES** 
+{icon}`fa-solid fa-chalkboard-user`  **Séance TD-1 : SIGNAUX ET SPECTRES** 
 ^^^  
 
  - <span style="color:red"> ***Sujet :***</span> {download}`TD1 : SIGNAUX ET SPECTRES <./downloads/TD1-signal.pdf>`
@@ -29,7 +29,7 @@ Version en ligne {fas}`arrow-right`  {bdg-link-primary}`TD1 <https://ch-poulliat
 :class-body: sd-text-center
 :class-footer: sd-text-center
 
-**Séance TD-2 : FILTRAGE** 
+{icon}`fa-solid fa-chalkboard-user`  **Séance TD-2 : FILTRAGE** 
 ^^^  
 
 - <span style="color:red"> ***Sujet :***</span> {download}`TD2 : FILTRAGE <./downloads/TD2-signal.pdf>`
@@ -45,7 +45,7 @@ Version en ligne {fas}`arrow-right` {bdg-link-primary}`TD2 <https://ch-poulliat.
 :class-body: sd-text-center
 :class-footer: sd-text-center
 
-**Séance TD-3 : ECHANTILLONNAGE** 
+{icon}`fa-solid fa-chalkboard-user`  **Séance TD-3 : ECHANTILLONNAGE** 
 ^^^ 
 
 - <span style="color:red"> ***Sujet :***</span> {download}`TD3 : ECHANTILLONNAGE <./downloads/TD3-signal.pdf>`

@@ -25,7 +25,7 @@ Vous pouvez consulter les rubriques suivantes :
 :shadow: md 
 :class-header: bg-light center
 
-Organisation du Cours
+{icon}`fa-solid fa-clipboard-list`  **Organisation du Cours**
 ^^^
 
 L'organisation du cours et les ressources disponibles associées.
@@ -37,7 +37,7 @@ L'organisation du cours et les ressources disponibles associées.
 :shadow: md 
 :class-header: bg-light
 
-Travaux Dirigés & Exercices corrigés
+{icon}`fa-solid fa-file-pen` **Travaux Dirigés & Exercices corrigés**
 ^^^
 
 Les sujets et corrections des TDs, ainsi que le polycopié d'exercices résolus.
@@ -51,7 +51,7 @@ Les sujets et corrections des TDs, ainsi que le polycopié d'exercices résolus.
 :shadow: md 
 :class-header: bg-light
 
-Travaux pratiques & Projet
+{icon}`fa-solid fa-computer`  **Travaux pratiques & Projet**
 ^^^
 
 Les ressources disponibles associées aux TPs et projet.

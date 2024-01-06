@@ -1,11 +1,12 @@
-## Séance TD-2 : Filtrage
+## {icon}`fa-solid fa-chalkboard-user` Séance TD-2 : Filtrage
 
 
-### Exercice 1 :
+### {icon}`fa-solid fa-folder` Exercice 1 :
 ````{margin}
 
 ```{dropdown} Propriétés TF
 :animate: fade-in-slide-down
+:icon: bell
 
 **Propriétés générales T.F.**
 
@@ -38,6 +39,7 @@ $$\small\underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharpo
 
 ```{dropdown} Tables TF
 :animate: fade-in-slide-down
+:icon: bell
 
 \begin{align*}
 \small 1 & \small \rightleftharpoons  \delta \left( f \right)\\ 
@@ -63,9 +65,8 @@ $$\small \mathrm{sinc}\left( \pi Tf\right)=\frac{\sin \left( \pi Tf\right) }{\pi
 ```
 ````
 
-``````{exercise} Filtre moyenneur à mémoire finie 
-:nonumber:
-:class: dropdown
+``````{admonition} Filtre moyenneur à mémoire finie 
+:class: exercise, dropdown
 
 Le filtre moyenneur à mémoire finie est un système défini par la relation entrée-sortie suivante :
 
@@ -77,8 +78,8 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
 
 1. Montrer que ce filtre moyenneur à mémoire finie est un filtre linéaire et calculer sa réponse impulsionnelle.
 
-    `````{dropdown} Solution
-    :animate: fade-in-slide-down
+    `````{admonition} Solution
+    :class: solution, dropdown
 
 
     **Il existe plusieurs manières de répondre à cette question :**
@@ -183,8 +184,8 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
         
 2. Ce filtre est-il réalisable ?
 
-    `````{dropdown} Solution
-    :animate: fade-in-slide-down
+    `````{admonition} Solution
+    :class: solution, dropdown
     
     Un filtre est réalisable si :
     
@@ -200,7 +201,7 @@ où $x(t)$ représente l'entrée du filtre et $y(t)$ la sortie.
 
 ``````
 
-### Exercice 2 :
+### {icon}`fa-solid fa-folder` Exercice 2 :
 ````{margin}
 ```{admonition} Tip : Exercice 2
 :class: tip, dropdown
@@ -213,9 +214,8 @@ On le note aussi *SNR* (Signal to Noise Ratio).
 ```
 ````
 
-``````{exercise} Calcul d'un Rapport Signal sur Bruit (RSB) en sortie d'un filtre linéaire
-:nonumber:
-:class: dropdown
+``````{admonition} Calcul d'un Rapport Signal sur Bruit (RSB) en sortie d'un filtre linéaire
+:class: exercise, dropdown
 
 Considérons un filtre linéaire de réponse en fréquence :
 
@@ -245,8 +245,8 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
 
     où $P_{Y_s}$ représente la puissance du signal $Y_s(t)$ et $P_{Y_B}$ la puissance du signal $Y_B(t)$.
 
-    `````{dropdown} Solution
-    :animate: fade-in-slide-down
+    `````{admonition} Solution
+    :class: solution, dropdown
 
 
     **Il existe plusieurs manières de répondre à cette question :**
@@ -293,8 +293,8 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
 
 2. Montrer qu'il est maximal pour $\theta =2\pi f_{0}$.
 
-    `````{dropdown} Solution
-    :animate: fade-in-slide-down
+    `````{admonition} Solution
+    :class: solution, dropdown
 
     \begin{align*}
     \frac{d RSB}{d \theta}&=2\frac{A^2}{N_0}\frac{4 \pi^2 f_0^2- \theta^2}{\left(4 \pi^2 f_0^2 + \theta^2\right)^2}
@@ -307,7 +307,7 @@ où $Y_{s}(t)$ représente la réponse du filtre à l'entrée $s(t)$ et $Y_{B}(t
     `````
 ``````
 
-### Exercice 3 :
+### {icon}`fa-solid fa-folder` Exercice 3 :
 
 ````{margin}
 
@@ -323,9 +323,8 @@ $E\left[ e^{uZ}\right] =\exp \left( mu+\frac{\sigma ^{2}}{2}u^{2}\right)$
 ````
 
 
-````{exercise} Filtrage non linéaire de type exponentiel
-:nonumber:
-:class: dropdown
+````{admonition} Filtrage non linéaire de type exponentiel
+:class: exercise, dropdown
 
 On considère un filtre non linéaire de type exponentiel. Si $X\left(t\right) $ est l'entrée du filtre, la sortie $Y\left( t\right) $ s'écrit :
 
@@ -337,8 +336,8 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
 
 1. Calculez la moyenne du signal en sortie du filtre.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     \begin{align*}
     m_Y&=E\left[Y(t)\right]\\
@@ -350,8 +349,8 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
 
 2. Calculez la variance du signal en sortie du filtre.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
 
     
     \begin{align*}
@@ -365,8 +364,8 @@ L'entrée du filtre est un bruit gaussien, réel, centré, de variance $\sigma ^
 
 3. Calculez la fonction d'autocorrélation du signal en sortie du filtre en fonction de celle du signal à l'entrée.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
     
     On utilise le théorème de Price :
 

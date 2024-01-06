@@ -1,4 +1,4 @@
-# Travaux Pratiques & Projet
+# {icon}`fa-solid fa-computer` Travaux Pratiques & Projet
 
 
 

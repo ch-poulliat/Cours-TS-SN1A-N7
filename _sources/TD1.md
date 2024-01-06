@@ -1,11 +1,12 @@
-## Séance TD-1 : Signaux & Spectres
+## {icon}`fa-solid fa-chalkboard-user`  Séance TD-1 : Signaux & Spectres
 
 
-### Exercice 1 :
+###  {icon}`fa-solid fa-folder` Exercice 1 :
 `````{margin}
 
-````{dropdown} Propriétés TF
+````{dropdown}  Propriétés TF
 :animate: fade-in-slide-down
+:icon: bell
 
 **Propriétés générales T.F.**
 
@@ -38,6 +39,7 @@ $$\small \underset{n\in \mathbb{Z}}{\sum }c_{n}e^{+i2\pi nf_{0}t} \rightleftharp
 
 ````{dropdown} Tables TF
 :animate: fade-in-slide-down
+:icon: bell
 
 \begin{align*}
 \small 1 & \small \rightleftharpoons  \delta \left( f \right)\\ 
@@ -64,9 +66,8 @@ $$\small \mathrm{sinc}\left( \pi Tf\right)=\frac{\sin \left( \pi Tf\right) }{\pi
 `````
 
 
-````{exercise} Etude du secteur
-:nonumber:
-:class: dropdown
+````{admonition} Etude du secteur
+:class: exercise, dropdown
 
 On considère dans cet exercice différents modèles du secteur et on étudie la densité spectrale de puissance des signaux obtenus à l'aide de ces modèles.
 
@@ -80,9 +81,9 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 
     Préciser la classe à laquelle appartient le signal $X(t)$ puis déterminer sa fonction d'autocorrélation $R_X(\tau)$ et sa densité spectrale de puissance $S_X(f)$.  
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
-
+     ```{admonition} Solution
+    :class: solution, dropdown
+    
     - Le signal est déterministe à puissance moyenne finie périodique : en notant $T_0=\frac{1}{f_0}$, on a 
 
     \begin{align*}
@@ -120,9 +121,10 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 
     Préciser la classe à laquelle appartient le signal $X(t)$ puis d\'{e}terminer sa moyenne, sa fonction d'autocorrélation $R_X(\tau)$ et sa densité spectrale de puissance $S_X(f)$.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
-
+    
+    ```{admonition} Solution
+    :class: solution, dropdown
+    
     - Le signal est aléatoire.
 
     - Sa moyenne est donc donnée par : 
@@ -159,8 +161,8 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 
     $f$ étant une variable uniformément répartie sur l'intervalle $ \left[ f_{0}-\Delta f,f_{0}+\Delta f\right] $ indépendante de $\theta $. Calculer alors la moyenne, la fonction d'autocorrélation et la densité spectrale de puissance de $X\left( t\right) $.
     
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+     ```{admonition} Solution
+    :class: solution, dropdown
     
     - Le signal est aléatoire.
     
@@ -197,11 +199,10 @@ On considère dans cet exercice différents modèles du secteur et on étudie la
 
 ````
 
-### Exercice 2 :
+### {icon}`fa-solid fa-folder` Exercice 2 :
 
-````{exercise} Modulation d'amplitude
-:nonumber:
-:class: dropdown
+````{admonition} Modulation d'amplitude
+:class: exercise, dropdown
 
 Soit $A(t)$ un signal aléatoire stationnaire, réel, de fonction d'autocorrélation $R_A(\tau)$ et de densité spectrale de puissance $S_A(f)$ définie par :
 
@@ -218,8 +219,8 @@ On considère le signal $X(t)=A(t) \cos\left(2 \pi f_0 t + \theta \right)$, avec
 
 1. Montrer que $X(t)$ est un signal aléatoire stationnaire. Déterminer et représenter graphiquement sa densité spectrale de puissance.
 
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
 
     - Le signal est aléatoire. Pour montrer qu'il est stationnaire il faut montrer que $m_X$ et $R_X$ sont indépendantes du temps.
 
@@ -257,8 +258,8 @@ On considère le signal $X(t)=A(t) \cos\left(2 \pi f_0 t + \theta \right)$, avec
     a. Déterminer et tracer la densité spectrale de puissance de $Y(t)$.
             
             
-    ```{dropdown} Solution
-     :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
         
      \begin{align*}
      R_Y(\tau)&=E\left[Y(t)Y^*(t-\tau)\right]\\
@@ -283,8 +284,8 @@ On considère le signal $X(t)=A(t) \cos\left(2 \pi f_0 t + \theta \right)$, avec
 
     b. Quel traitement doit-on utiliser pour retrouver $A(t)$ à partir de $Y(t)$ ?
        
-    ```{dropdown} Solution
-    :animate: fade-in-slide-down
+    ```{admonition} Solution
+    :class: solution, dropdown
         
     Il faudra utiliser un filtre passe-bas pour conserver uniquement la partie $\frac{1}{4} S_A(f)$ et couper la partie qui se trouve autour de $2f_0$.
         
