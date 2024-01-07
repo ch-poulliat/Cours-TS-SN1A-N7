@@ -40,8 +40,15 @@ Deux parties dans cet enseignement des bases du traitement du  signal : *"Outils
 
 Le cours de traitement du signal est composé de deux parties :
 
-**Partie "Traitement du signal - Signaux et Systèmes continus" :**
+````{grid} 2
+```{grid-item-card} 
+:link: https://ch-poulliat.github.io/Cours-Signal-Part-I/intro.html
+:text-align: center 
+:shadow: md 
+:class-header: bg-light center
 
+{material-round}`toc;2em`  **Partie I "Traitement du signal - Signaux et Systèmes continus"**
+^^^
 Cette partie du cours est portée par J.-Y. Tourneret et C. Poulliat en charge des cours magistraux. 
 Le cours abordent les notions suivantes:
 
@@ -52,11 +59,15 @@ Le cours abordent les notions suivantes:
 3. Filtrage Linéaire 
 
 4. Traitements non-linéaires
+```
+```{grid-item-card} 
+:link: https://thomas11290.github.io/1SN-TNS/intro.html
+:text-align: center 
+:shadow: md 
+:class-header: bg-light
 
- 
-
-**Partie "Traitement numérique du signal" :**
-
+{material-round}`toc;2em` **Partie II "Traitement numérique du signal"**
+^^^
 Cette partie du cours est portée par N. Thomas en charge des cours magistraux. Le cours abordent les notions suivantes:
 
 1. Numérisation du signal : échantillonnage et quantification
@@ -64,6 +75,19 @@ Cette partie du cours est portée par N. Thomas en charge des cours magistraux. 
 2. Passage de la fonction d'autocorrélation et de la transformée de Fourier "outils théoriques" à une version implantable numériquement : quelles approximations ? quelles conséquences ?
 
 3. Définition des filtres numériques (RIF, RII), synthèse des filtres RIF
+
+```
+````
+
+
+
+
+
+ 
+
+
+
+
 
 ## {material-regular}`download` Ressources
 
