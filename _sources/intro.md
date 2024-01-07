@@ -58,3 +58,29 @@ Les ressources disponibles associées aux TPs et projet.
 
 ```
 ````
+
+Vous pouvez directement accéder aux policopiés en ligne des deux parties du cours ici :
+
+````{grid} 2
+```{grid-item-card} 
+:link: https://ch-poulliat.github.io/Cours-Signal-Part-I/intro.html
+:text-align: center 
+:shadow: md 
+:class-header: bg-light center
+:img-top: ./img/sound-waves.jpg
+
+{material-round}`link;2em`  **Traitement du signal - Signaux et Systèmes continus**
+^^^
+*<a href="https://www.freepik.com/free-photo/3d-abstract-sound-waves-design-with-flowing-particles_9318431.htm#query=signal%20processing&position=28&from_view=search&track=ais&uuid=413073e6-26c1-4a6d-84bc-c6153bbbac8b">Image by kjpargeter</a> on Freepik*
+```
+```{grid-item-card} 
+:link: https://thomas11290.github.io/1SN-TNS/intro.html
+:text-align: center 
+:shadow: md 
+:class-header: bg-light
+:img-top: ./img/dsp.jpg
+
+{material-round}`link;2em` **Traitement numérique du signal"**
+^^^
+<a href="https://www.freepik.com/free-vector/stream-binary-code-design_13311405.htm#page=10&query=digital%20signal&position=49&from_view=search&track=ais&uuid=368d1c62-9a22-415a-a9f1-649269db6db5">Image by rawpixel.com</a> on Freepik
+```
