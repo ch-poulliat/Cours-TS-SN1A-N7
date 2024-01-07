@@ -79,23 +79,17 @@ Cette partie du cours est portée par N. Thomas en charge des cours magistraux. 
 ```
 ````
 
-
-
-
-
- 
-
-
-
-
-
 ## {material-regular}`download` Ressources
 
 **Partie I : Traitement du signal - Signaux et Systèmes continus**
 
 {material-round}`web;1.5em` Un site web associé à cette partie est disponible ici [traitement du Signal-Partie I](https://ch-poulliat.github.io/Cours-Signal-Part-I/intro.html).
 
-<i class="fas fa-file-pdf" style="color: red;"></i> Vous y trouverez une version en ligne du polycopié ***Traitement du Signal - Signaux et Systèmes continus*** qui sera à terme augmentée d'exemples et de codes associés pour vous familiariser à Matlab ou aux librairies Python utiles à cette discipline. Les supports de cours (polycopiés en pdf et diapositives) y sont disponibles.
+<i class="fas fa-file-pdf" style="color: red;"></i> Le polycopié de cours est disponible ici  {download}`Polycopié 1SN Traitement du Signal - Partie I <./downloads/PolyTS-2022.pdf>`
+
+<i class="fas fa-file-pdf" style="color: red;"></i> Les diapositives du cours sont disponibles ici   {download}`Diapositives 1SN Traitement du Signal - Partie I <./downloads/slidesTS1SN_20222023.pdf>`
+
+{material-round}`slideshow` Les diapositives du cours en version html (Format reveal.js) sont consultables ici <a href="https://ch-poulliat.github.io/Cours-Signal-Part-I/slides/Slides.html"> Traitement du Signal</a>.
 
 **Partie II : Traitement Numérique du Signal**
 
@@ -104,6 +98,11 @@ Cette partie du cours est portée par N. Thomas en charge des cours magistraux. 
 <i class="fas fa-file-pdf" style="color: red;"></i> Le polycopié de cours sur cette partie est disponible ici {download}`Polycopié 1SN Traitement Numérique du Signal - Partie II <./downloads/Poly-TNS.pdf>`
 
 <i class="fas fa-file-pdf" style="color: red;"></i> Les diapositives du cours sur cette partie sont disponibles ici {download}`Diapositives 1SN Traitement Numérique du Signal - Partie II <./downloads/planches_COURS_TNS.pdf>`
+
+**Exercices**
+
+<i class="fas fa-file-pdf" style="color: red;"></i> Le polycopié d'exercices complémentraires au TDs et commun aux deux parties du cours est disponible ici  {download}`Polycopié 1SN Traitement du Signal - Exercices et problèmes résolus <./downloads/PolyTS-exercice-2022.pdf>`
+
 
 ## {icon}`fa-solid fa-book-open` Bibliographie
 
