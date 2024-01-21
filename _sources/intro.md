@@ -59,7 +59,7 @@ Les ressources disponibles associées aux TPs et projet.
 ```
 ````
 
-Vous pouvez directement accéder aux policopiés en ligne des deux parties du cours ici :
+Vous pouvez directement accéder aux polycopiés en ligne des deux parties du cours ici :
 
 ````{grid} 2
 ```{grid-item-card} 
@@ -80,7 +80,7 @@ Vous pouvez directement accéder aux policopiés en ligne des deux parties du co
 :class-header: bg-light
 :img-top: ./img/dsp.jpg
 
-{material-round}`link;2em` **Traitement numérique du signal"**
+{material-round}`link;2em` **Traitement numérique du signal**
 ^^^
-<a href="https://www.freepik.com/free-vector/stream-binary-code-design_13311405.htm#page=10&query=digital%20signal&position=49&from_view=search&track=ais&uuid=368d1c62-9a22-415a-a9f1-649269db6db5">Image by rawpixel.com</a> on Freepik
+*<a href="https://www.freepik.com/free-vector/stream-binary-code-design_13311405.htm#page=10&query=digital%20signal&position=49&from_view=search&track=ais&uuid=368d1c62-9a22-415a-a9f1-649269db6db5">Image by rawpixel.com</a> on Freepik*
 ```

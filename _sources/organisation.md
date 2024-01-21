@@ -4,7 +4,7 @@
 
 - **Nombre d'heures :**  7 cours, 2 séances de TPs, 5 séances de projet
 - **Langue d'enseignement : Français**
-- **Code :** N5EN05A
+- **Code :** N6EN08A
 ```
 
 ## {icon}`fa-solid fa-rocket` Objectifs
@@ -46,11 +46,12 @@ Le cours de traitement du signal est composé de deux parties :
 :text-align: center 
 :shadow: md 
 :class-header: bg-light center
+:img-top: ./img/sound-waves.jpg
 
 {material-round}`toc;2em`  **Partie I "Traitement du signal - Signaux et Systèmes continus"**
 ^^^
 Cette partie du cours est portée par J.-Y. Tourneret et C. Poulliat en charge des cours magistraux. 
-Le cours abordent les notions suivantes:
+Le cours aborde les notions suivantes:
 
 1. Corrélations et Spectres
 
@@ -59,22 +60,30 @@ Le cours abordent les notions suivantes:
 3. Filtrage Linéaire 
 
 4. Traitements non-linéaires
+
++++
+*<a href="https://www.freepik.com/free-photo/3d-abstract-sound-waves-design-with-flowing-particles_9318431.htm#query=signal%20processing&position=28&from_view=search&track=ais&uuid=413073e6-26c1-4a6d-84bc-c6153bbbac8b">Image by kjpargeter</a> on Freepik*
+
 ```
 ```{grid-item-card} 
 :link: https://thomas11290.github.io/1SN-TNS/intro.html
 :text-align: center 
 :shadow: md 
 :class-header: bg-light
+:img-top: ./img/dsp.jpg
 
 {material-round}`toc;2em` **Partie II "Traitement numérique du signal"**
 ^^^
-Cette partie du cours est portée par N. Thomas en charge des cours magistraux. Le cours abordent les notions suivantes:
+Cette partie du cours est portée par N. Thomas en charge des cours magistraux. Le cours aborde les notions suivantes:
 
 1. Numérisation du signal : échantillonnage et quantification
 
 2. Passage de la fonction d'autocorrélation et de la transformée de Fourier "outils théoriques" à une version implantable numériquement : quelles approximations ? quelles conséquences ?
 
 3. Définition des filtres numériques (RIF, RII), synthèse des filtres RIF
+
++++
+*<a href="https://www.freepik.com/free-vector/stream-binary-code-design_13311405.htm#page=10&query=digital%20signal&position=49&from_view=search&track=ais&uuid=368d1c62-9a22-415a-a9f1-649269db6db5">Image by rawpixel.com</a> on Freepik*
 
 ```
 ````
@@ -87,7 +96,7 @@ Cette partie du cours est portée par N. Thomas en charge des cours magistraux. 
 
 <i class="fas fa-file-pdf" style="color: red;"></i> Le polycopié de cours est disponible ici  {download}`Polycopié 1SN Traitement du Signal - Partie I <./downloads/PolyTS-2022.pdf>`
 
-<i class="fas fa-file-pdf" style="color: red;"></i> Les diapositives du cours sont disponibles ici   {download}`Diapositives 1SN Traitement du Signal - Partie I <./downloads/slidesTS1SN_20222023.pdf>`
+<i class="fas fa-file-pdf" style="color: red;"></i> Les diapositives du cours sont disponibles ici   {download}`Diapositives 1SN Traitement du Signal - Partie I <./downloads/slidesTS1SN_20232024.pdf>`
 
 {material-round}`slideshow` Les diapositives du cours en version html (Format reveal.js) sont consultables ici <a href="https://ch-poulliat.github.io/Cours-Signal-Part-I/slides/Slides.html"> Traitement du Signal</a>.
 
